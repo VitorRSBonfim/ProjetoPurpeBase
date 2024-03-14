@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Confidurações Padrão*/
+
+* {
+
+    
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+
+
+/**/
+
+/*HEADER >>>*/
+
+
+header {
+
+    max-width: 1300px;
+    margin: auto;
+
+}   
+
+nav {
+    
+    display: flex;
+
+}

@@ -1,0 +1,11 @@
+// Paleta de cores PB
+
+#321473
+
+#281159
+
+#7A4ED9
+
+#724EBF
+
+#724EBF
