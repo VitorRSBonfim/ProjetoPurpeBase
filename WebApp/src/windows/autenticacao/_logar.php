@@ -23,7 +23,8 @@
                     session_start();
                     $_SESSION['idUsuarioLogin'] = $linha[0];
                     $_SESSION['nomeUsuarioLogin'] = $linha[1];
-                    header('location:grupos.php');
+                    header('location:../system/index.php
+                    ');
  
                 }
  

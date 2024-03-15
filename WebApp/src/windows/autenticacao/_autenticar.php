@@ -21,7 +21,7 @@
  
         $idUsuarioSessao = $_SESSION['idUsuarioLogin'];
         $nomeUsuarioSessao = $_SESSION['nomeUsuarioLogin'];
-        $loginUsuarioSessao = $_SESSION['loginUsuarioLogin'];
+       
 
         $id =  $_SESSION['idUsuarioLogin'];
  
