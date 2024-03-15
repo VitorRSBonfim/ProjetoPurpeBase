@@ -10,7 +10,7 @@
 </head>
 <body>
 
-
+    
     <div class="bg-header">
         <header>
             <nav >
@@ -40,24 +40,35 @@
 
             <p class="text-center mt-5 mb-5" >Bem Vindo novamente!</p>
 
-            <form action="">
+            <form action="login.html" method="post">
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 mb-4">
                         <label class="mb-2" for="">Email</label>
-                        <input type="text" class="form-control" >
+                        <input type="text" name="email" id="email" placeholder="Insira seu E-mail" class="form-control" >
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 mb-4">
                         <label class="mb-2" for="">Senha</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="senha" id="senha" placeholder="Insira a senha" class="form-control">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 ">
-                        <button class="btn-logar mb-4">Entrar</button>
+                        <button formaction="login.php" class="btn-logar mb-4"><?php echo 'sss' ?></button>
                     </div>
+
+                    <div class="col-sm-12">
+                        <?php 
+
+                            include_once '_logar.php';
+
+                            echo $mensagem;
+
+                        ?>
+                    </div>
+
                 </div>
             </form>
         </div>
