@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*
+
+*/
+
+
 /*Confidurações Padrão*/
 
 * {
@@ -11,16 +16,54 @@
 
 }
 
-body {
 
-    height: 300vh;
-    padding-top: 100px; /*Padding para afastar conteudo para "fora" de header*/
+
+/**/
+
+/*Container LOGIN*/
+
+.container-mine {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    /*Alinhando box*/
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+
+    width: 500px;
+    height: auto;
+    background: #ffff;
+    border-radius: 10px;
+
+}
+
+#input-global {
+
+    margin: 30px;
+
+}
+
+.btn-logar {
+
+    background-color: #321473;
+    padding: 10px 30px 10px 30px; /* top, right, bottom, left*/
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 /**/
 
-/*HEADER >>>*/
-
+/*Estilo header "mesmo da tella main"*/
 
 .bg-header {
 
