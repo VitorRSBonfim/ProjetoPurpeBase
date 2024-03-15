@@ -14,7 +14,8 @@
     <?php 
                     
         include '_logar.php';
-                    
+        include '_registrar.php';
+
     ?>
 
     
@@ -31,12 +32,12 @@
                     </li>
                     
                 </ul>
-                <ul class="ul-aunt" >
+                <ul style="margin-bottom: 0px;" class="ul-aunt" >
                     <li>
-                        <a href="src/windows/autenticacao/registro.html"><button class="btn-registro" >Não tem uma conta?</button></a>
+                        <a href="src/windows/autenticacao/registro.html"><button class="btn-registro" >Já tem uma conta?</button></a>
                     </li>
                     <li>
-                        <a href="registro.php"><button class="btn-login" >registro</button></a>
+                        <a href="login.php"><button class="btn-login" >Login</button></a>
                     </li>
                 </ul>
             </nav>
@@ -47,35 +48,47 @@
 
         <div class="box">
 
-            <p class="text-center mt-5 mb-5" >Bem Vindo novamente!</p>
+            <p class="text-center mt-4 mb-4" >Vamos Começar</p>
 
-            <form action="login.html" method="post">
+            <form action="registro.php" method="post">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-sm-9 col-9 mb-4">
+                        <label class="mb-2" for="">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu Nome" autocomplete="off"  class="form-control" >
+                    </div>
+                </div>
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 mb-4">
                         <label class="mb-2" for="">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Insira seu E-mail" class="form-control" >
+                        <input type="text" name="email" id="email" placeholder="Insira seu E-mail" autocomplete="off"  class="form-control" >
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 mb-4">
                         <label class="mb-2" for="">Senha</label>
-                        <input type="text" name="senha" id="senha" placeholder="Insira a senha" class="form-control">
+                        <input type="text" name="senha" id="senha" placeholder="Insira a senha" autocomplete="off"  class="form-control">
+                        
                     </div>
                 </div>
+                
 
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-sm-9 col-9 ">
-                        <button formaction="login.php" class="btn-logar mb-4">Entrar</button>
+                        <button formaction="registro.php" name="cad" id="cad" class="btn-logar mb-4">Cadastrar</button>
                     </div>
 
                 </div>
 
                 <div class="row justify-content-center">
-                    <div>
+                    <div style="padding: 0;" >
                         <hr>
-                        <p style="display: flex; align-itens: center; margin-left: 10px;" >Ao entrar você concorda com todos os termos de serviços 
-                            <span style="margin-left: 10px;" class="material-symbols-outlined">help</span>
+                        
+                        <p style="display: flex; align-itens: center; margin-left: 30px; font-size: 10px;" >
+                            Ao clicar no botão acima, você concorda com nossos &nbsp;<a href=""> termos de serviço </a> &nbsp; e <a href="">  &nbsp; política de privacidade.</a>
+                            
+                            
                         </p>
+                        
                     </div>
                 </div>
 
