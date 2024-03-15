@@ -31,10 +31,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
-/* scrollbar Não esta funcionando no firefox */
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -56,8 +53,6 @@ body {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 255, 255, 0.3);
 }
-
-
 
 .pagina {
   display: flex;
@@ -90,7 +85,7 @@ body {
   text-align: center;
   border-bottom: 2px solid #f2f2f2;
   font-weight: bold;
-  color: #000000;
+  color: #04aa6d;
 }
 
 .menu-item {
@@ -201,102 +196,3 @@ p {
     display: none;
   }
 }
-
-
-/*MENU :>>> ANTIGO
-
-nav.menu-lateral {
-
-    width: 80px;
-    height: 100%;
-    background-color:#281159;
-    padding-top: 20px;
-    
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 1s;
-
-}
-
-nav.menu-lateral.open{
-
-    width: 200px;
-
-
-}
-
-
-nav.menu-lateral.open .cnt{
-
-    margin-left: 500px;
-
-
-}
-
-
-.btn-menu {
-
-    width: 100%;
-    padding-left: 10px;
-    margin-bottom: 50px;
-
-}
-.btn-menu i {
-
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-
-}
-
-ul {
-
-    height: 100%;
-    list-style: none;
-
-}
-
-
-ul li.menu-item a {
-
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-   
-        
-    
-
-}
-
-ul li.menu-item a .txt-link {
-
-    margin-left: 30px;
-    white-space: nowrap;
-    position: absolute;
-    left: 30px;
-    font-size: 15px;
-
-}
-
-ul li.menu-item a .icon > i {
-
-    font-size: 15px;
-    margin: 18px;
-    
-
-}
-
-
-
-ul li.ativo {
-
-    background-color: #c1bec7;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-

@@ -15,7 +15,8 @@
 
         include_once '../autenticacao/_autenticar.php';
 
-    
+        echo $idUsuarioSessao;
+
     ?>
 
     <div class="pagina">
@@ -28,7 +29,7 @@
             <?php 
                 include_once '../autenticacao/pegarNomeUsuario.php';
 
-                echo "Bem vindo $loginUsuarioSessao ID:$idUsuarioSessao";
+                echo "$loginUsuarioSessao";
 
             ?>
           </a>
