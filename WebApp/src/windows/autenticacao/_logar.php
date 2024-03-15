@@ -23,6 +23,7 @@
                     session_start();
                     $_SESSION['idUsuarioLogin'] = $linha[0];
                     $_SESSION['nomeUsuarioLogin'] = $linha[1];
+                    $_SESSION['loginUsuarioLogin'] = $linha[2];
                     header('location:../system/index.php
                     ');
  

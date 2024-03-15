@@ -15,53 +15,87 @@
 
         include_once '../autenticacao/_autenticar.php';
 
-        echo $idUsuarioSessao;
-
+    
     ?>
 
-    <nav class="menu-lateral">
+    <div class="pagina">
 
-        <div style="display: flex;" class="btn-menu">
-            <i style="font-weight: lighter; font-size: 40px;" class="bi bi-list" id="btn-opnn"></i>
-            <h1 style="color: white; margin-left: 20px;" >asasas</h1>
+        <!-- MENU LATERAL -->
+        <div class="left-sidebar" id="sidebar">
+          <!-- LOGO DO TOPO -->
+          <a class="menu-logo" href="#">
+            <i class="mdi mdi-code-not-equal-variant"></i>
+            <?php 
+                include_once '../autenticacao/pegarNomeUsuario.php';
+
+                echo "Bem vindo $loginUsuarioSessao ID:$idUsuarioSessao";
+
+            ?>
+          </a>
+          <!-- CONTEUDO DO CENTRO DO MENU -->
+          <div class="conteudo-sidebar">
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+            <a class="menu-item" href="#">Item</a>
+
+            <a class="menu-item bottom" href="#">
+              Item em baixo
+            </a>
+          </div>
         </div>
-
-        <ul>
-            <li class="menu-item ativo" >
-                <a href="#">
-                    <span class="icon" ><i class="bi bi-menu-button"></i></span>
-                    <span class="txt-link">Todas as Tarefas</span>
+      
+        <!-- MIOLO DA APLICAÇÃO -->
+        <section class="w-100">
+          <nav>
+            <ul>
+              <li>
+                <a id="menuBtn" class="active" href="#">
+                  <i class="mdi mdi-menu"></i>
                 </a>
-            </li>
-            <li class="menu-item" >
-                <a href="#">
-                    <span class="icon" ><i class="bi bi-calendar4-range"></i></span>
-                    <span class="txt-link">Linha do Tempo</span>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="mdi mdi-school"></i>
+                  LINK</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="mdi mdi-youtube"></i>
+                  LINK
                 </a>
-            </li>
-            <li class="menu-item" >
-                <a href="#">
-                    <span class="icon" ><i class="bi bi-chat-left-text"></i></span>
-                    <span class="txt-link">Mensagens</span>
-                </a>
-            </li>
-            <li class="menu-item" >
-                <a href="#">
-                    <span class="icon" ><i class="bi bi-person-circle"></i></span>
-                    <span class="txt-link">Perfil</span>
-                </a>
-            </li>
-            <li class="menu-item" >
-                <a href="#">
-                    <span class="icon" ><i class="bi bi-gear"></i></span>
-                    <span class="txt-link">Configurações</span>
-                </a>
-            </li>
+              </li>
+            </ul>
             
-            
-        </ul>
+          </nav>
+          <div style="overflow: auto; height: 100vh;" >
+              
+                <h1>
+                    Conteudo software
+                </h1>
 
-    </nav>
+          </div>
+      
+        </section>
+      
+        <!-- OVERLAY MOBILE -->
+        <div class="overlay hidden" id="overlay"></div>
+      
+      </div>
 
     <script src="script.js"></script>
 

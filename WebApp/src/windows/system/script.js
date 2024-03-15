@@ -1,26 +1,16 @@
-var menuItem = document.querySelectorAll('.menu-item');
+//ITENS
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-function selcionarLink() {
-    
-    menuItem.forEach((item) =>
+//CLICOU NO MENU
+menuBtn.onclick = function () {
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("hidden");
+};
 
-        item.classList.remove('ativo')
-
-    )
-    this.classList.add('ativo')
-
-}
-
-menuItem.forEach((item) =>
-
-    item.addEventListener('click', selcionarLink)
-
-)
-
-var btn_opnn = document.querySelector('#btn-opnn');
-var menu = document.querySelector('.menu-lateral')
-
-btn_opnn.addEventListener('click', function(){
-    menu.classList.toggle('open')
-    
-})
+//CLICOU NO OVERLAY
+overlay.onclick = function () {
+  overlay.classList.toggle("hidden");
+  sidebar.classList.toggle("active");
+};
