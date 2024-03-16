@@ -1,4 +1,4 @@
-
+/*
 //ITENS
 const menuBtn = document.getElementById("menuBtn");
 const sidebar = document.getElementById("sidebar");
@@ -16,3 +16,13 @@ overlay.onclick = function () {
   sidebar.classList.toggle("active");
 };
 
+*/
+
+const menuSideBar = document.getElementById('menu-side');
+const btnAbrir = document.getElementById('btnAbrir');
+
+
+btnAbrir.onclick = function () {
+  menuSideBar.classList.toggle("oppen");
+  console.log("s")
+};
