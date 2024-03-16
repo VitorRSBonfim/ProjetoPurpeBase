@@ -18,8 +18,9 @@
     <?php 
 
       include_once '../autenticacao/_autenticar.php';
+      
 
-
+      
 
     ?>
 
@@ -36,10 +37,13 @@
 
               <i class="bi bi-person-circle"></i>
 
-              <p style="color: white;" >
+              <p  style="color: white;" >
                 <?php 
 
                   echo $nomeUsuarioSessao;
+
+                  
+                  
 
                 ?>
               </p>
@@ -102,18 +106,48 @@
               </button>
             </li>
           </ul>
+
+          
+          
         </header>
         
         
-        <h1  style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a in possimus fuga odit dolorum tenetur error ducimus, voluptas omnis. Eaque aspernatur soluta repellat rerum tenetur dolorum maiores nemo autem?</h1>
+       
 
         <div class="conteudo-php">
           
           <div class="card-tarefas">
 
+            <div class="card">
+              <h1>
+                Tarefas Pendentes
+              </h1>
+
+              <?php 
+              
+              include_once 'tarefas/buscarTarefasPHP.php';
+
+              ?>
+              
+            </div>
             
+            <div class="card">
+              <h1>
+                Tarefas em Andamento
+              </h1>
+              
+            </div>
+            <div class="card">
+              <h1>
+                Tarefas concluidas
+              </h1>
+              
+            </div>
+
 
           </div>
+
+          
 
         </div>
 
@@ -123,6 +157,17 @@
     </div>
     
     <script src="script.js"></script>
+
+    <script>
+
+      function mostarNome (id) {
+
+        window.alert(id);
+
+      }
+      
+      
+    </script>
 
 </body>
 </html>
