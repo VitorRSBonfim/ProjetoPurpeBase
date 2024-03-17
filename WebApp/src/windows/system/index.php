@@ -13,12 +13,7 @@
     
     <!--Estilo para as classes criadas dentro do php -->
 
-    <style>
-
-      
-
-
-    </style>
+    
 
     <title>PB</title>
 </head>
