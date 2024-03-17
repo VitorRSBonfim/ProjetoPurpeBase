@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
+    <!--Estilo para as classes criadas dentro do php -->
+
+    <style>
+
+      
+
+
+    </style>
+
     <title>PB</title>
 </head>
 <body>
@@ -120,26 +129,34 @@
 
             <div class="card">
               <h1>
-                Tarefas Pendentes
+                Projetoa Pendentes
               </h1>
 
-              <?php 
               
-              include_once 'tarefas/buscarTarefasPHP.php';
+              <div class="aa">
+                <?php
+                
+                  include_once 'tarefas/buscarTarefasPHP.php';
 
-              ?>
+                  
+
+                ?>
+              </div>
+              
               
             </div>
             
             <div class="card">
               <h1>
-                Tarefas em Andamento
+                Projetoa em Andamento
               </h1>
+
+              
               
             </div>
             <div class="card">
               <h1>
-                Tarefas concluidas
+                Projetoa concluidas
               </h1>
               
             </div>
@@ -160,9 +177,14 @@
 
     <script>
 
+      var input = document.getElementById('num');
+
       function mostarNome (id) {
 
         window.alert(id);
+
+        input.value = id;
+
 
       }
       

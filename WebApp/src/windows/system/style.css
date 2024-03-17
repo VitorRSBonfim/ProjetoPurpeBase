@@ -2,6 +2,12 @@
 
 /*Confidurações Padrão*/
 
+html .p {
+  
+  font-size: 100px;
+
+}
+
 * {
 
     
@@ -73,7 +79,6 @@ body {
   margin-left: 10px;
 
 }
-
 
 
 #btnAbrir {
@@ -197,6 +202,12 @@ header {
   margin-top: 10px;
 
 }
+.card-tarefas .card .aa .p {
+
+  background-color: red;
+
+}
+
 
 
 /*MENU ANTIGO 
