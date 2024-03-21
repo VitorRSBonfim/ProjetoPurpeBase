@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Estilo para as classes criadas dentro do php -->
 
     
@@ -31,9 +32,7 @@
     
     <div class="container-pag">
 
-      
-
-      <div class="menu-side oppen" id="menu-side">
+      <div class="menu-side" id="menu-side">
         <nav>
 
           <ul class="ul-usuario">
@@ -46,9 +45,6 @@
 
                   echo $nomeUsuarioSessao;
 
-                  
-                  
-
                 ?>
               </p>
             </li>
@@ -58,35 +54,47 @@
 
             <div>
               <li>
-                <i class="bi bi-house"></i>
-                <p>
+                <a class="a-menu-side" href="">
+                  <i class="bi bi-house"></i>
+                  <p>
                   
-                  Inicio
-                </p>
+                    Inicio
+                  </p>
+                </a>
               </li>
               <li>
-                <i class="bi bi-app-indicator"></i>
-                <p>
-                  Caixa de Entrada
-                </p>
+                <a href="" class="a-menu-side">
+                  <i class="bi bi-bell"></i>
+                  <p>
+                    Caixa de Entrada
+                  </p>
+                </a>
               </li>
               <li>
-                <i class="bi bi-calendar"></i>
-                <p>
-                  Calendario
-                </p>
+                <a href="" class="a-menu-side">
+                  <i class="bi bi-calendar"></i>
+                  <p>
+                    Calendario
+                  </p>
+                </a>
               </li>
               <li>
-                <i class="bi bi-chat-left"></i>
-                <p>
-                  Chat
-                </p>
+                <a href="" class="a-menu-side">
+                  <i class="bi bi-chat-left"></i>
+                  <p>
+                    Chat
+                  </p>
+                </a>
               </li>
             </div>
 
             <div>
               <li class="loggout-links">
-                <button>Sair</button>
+                <button class="btnSair"><span class="material-symbols-outlined">
+                    logout
+                  </span>
+                </button>
+                <p>Loggout</p>
               </li>
             </div>
 
@@ -122,40 +130,8 @@
           
           <div class="card-tarefas">
 
-            <div class="card">
-              <h1>
-                Projetoa Pendentes
-              </h1>
-
-              
-              <div class="aa">
-                <?php
-                
-                  include_once 'tarefas/buscarTarefasPHP.php';
-
-                  
-
-                ?>
-              </div>
-              
-              
-            </div>
-            
-            <div class="card">
-              <h1>
-                Projetoa em Andamento
-              </h1>
-
-              
-              
-            </div>
-            <div class="card">
-              <h1>
-                Projetoa concluidas
-              </h1>
-              
-            </div>
-
+           
+  
 
           </div>
 

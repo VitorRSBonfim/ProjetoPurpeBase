@@ -13,6 +13,15 @@
 
 }
 
+.a-menu-side {
+
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+
+}
+
 * li {
 
   list-style: none;
@@ -106,6 +115,33 @@ body {
 
 }
 
+
+.loggout-links .btnSair {
+
+  background-color: transparent;
+ 
+  border-radius: 10px;
+  transition: 1s ease-out;
+  color: white;
+}
+
+.links-sidebar form nav ul li button {
+
+  background-color: transparent;
+  color: white;
+  white-space: nowrap;
+
+}
+
+.menu-side.oppen {
+
+  width: 300px;
+  transition: .5s;
+  
+
+
+}
+
 .ul-usuario {
 
   border-bottom: 1px solid gray;
@@ -158,6 +194,19 @@ body {
 
 }
 
+.p-SideBar {
+
+  font-size: 20px;
+
+}
+
+.bntMenuSide {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
 
 
 /*Editasndo Header*/
